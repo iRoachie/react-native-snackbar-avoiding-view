@@ -1,0 +1,29 @@
+{
+  "name": "react-native-snackbar-avoiding-view",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Kyle Roach",
+  "license": "MIT",
+  "description": "CoordinatorLayout View which adjusts content when a snackbar is present",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iRoachie/react-native-snackbar-avoiding-view.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iRoachie/react-native-snackbar-avoiding-view/issues"
+  },
+  "homepage": "https://github.com/iRoachie/react-native-snackbar-avoiding-view#readme",
+  "peerDependencies": {
+    "react": ">=15.1 || >=16.0.0-alpha.6",
+    "react-native": ">=0.40"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "snackbar",
+    "view",
+    "component"
+  ]
+}

@@ -1,0 +1,1 @@
+# React Native Snackbar Avoid View
