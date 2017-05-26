@@ -1,5 +1,9 @@
 # React Native Snackbar Avoiding View
-AvoidingView that adjusts when a snackbar is present
+##### The Problem
+Snackbar's appear at the bottom edge of the screen and overlay the content which sometimes is a Floating Action Button. However, the snackbar should not overlay the FAB according to the Material Design spec.
+
+##### Solution
+An AvoidingView that adjusts when a snackbar is present
 
 ![img](http://i.imgur.com/UvcnTLI.gif)
 
@@ -33,7 +37,7 @@ Snackbar.show({
 })
 
 this.refs.avoidingView.avoidSnackbar({
-  spring: 200, 
+  spring: 200,
   delay: 2800,
   height: 40
 })
