@@ -2,6 +2,7 @@
   "name": "react-native-snackbar-avoiding-view",
   "version": "0.0.1",
   "main": "index.js",
+  "types": "index.d.ts",
   "author": "Kyle Roach",
   "license": "MIT",
   "description": "AvoidingView that adjusts when a snackbar is present",
