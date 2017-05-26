@@ -51,3 +51,6 @@ avoidSnackbar(props)
 | spring | Time it takes for the show/hide action |
 | delay | Time to pause between the snackbar showing, then hiding |
 | height | Height of the snackbar |
+
+## Example
+Clone the repo and run the Example project to see it in action
