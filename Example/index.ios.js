@@ -11,14 +11,14 @@ import {
   Text,
   View
 } from 'react-native';
-import SnackBarAvoidingView from '../index'
+import SnackBarAvoidingView from 'react-native-snackbar-avoiding-view'
 import { ActionButton, Button, ThemeProvider } from 'react-native-material-ui'
 import Snackbar from 'react-native-snackbar'
 
 export default class Test extends Component {
   showSnackbar() {
     Snackbar.show({
-      title: 'Heloooo',
+      title: 'That\' right FAB, move!',
       duration: Snackbar.LENGTH_LONG
     })
 
@@ -33,7 +33,7 @@ export default class Test extends Component {
     return (
       <ThemeProvider>
         <View style={styles.container}>
-          <Button text="Bah" onPress={this.showSnackbar.bind(this)}/>
+          <Button text="Open Snackbar" onPress={this.showSnackbar.bind(this)}/>
 
           <SnackBarAvoidingView ref="avoidingView">
             <ActionButton onPress={() => alert('a')}/>
@@ -63,4 +63,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Test', () => Test);
+AppRegistry.registerComponent('example', () => Test);
