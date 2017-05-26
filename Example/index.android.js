@@ -1,0 +1,66 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
+import SnackBarAvoidingView from '../index'
+import { ActionButton, Button, ThemeProvider } from 'react-native-material-ui'
+import Snackbar from 'react-native-snackbar'
+
+export default class Test extends Component {
+  showSnackbar() {
+    Snackbar.show({
+      title: 'Heloooo',
+      duration: Snackbar.LENGTH_LONG
+    })
+
+    this.refs.avoidingView.avoidSnackbar({
+      spring: 200, 
+      delay: 2800,
+      height: 40
+    })
+  }
+
+  render() {
+    return (
+      <ThemeProvider>
+        <View style={styles.container}>
+          <Button text="Bah" onPress={this.showSnackbar.bind(this)}/>
+
+          <SnackBarAvoidingView ref="avoidingView">
+            <ActionButton onPress={() => alert('a')}/>
+          </SnackBarAvoidingView>
+        </View>
+      </ThemeProvider>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
+
+AppRegistry.registerComponent('Test', () => Test);
