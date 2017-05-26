@@ -18,9 +18,6 @@
     "react": ">=15.1 || >=16.0.0-alpha.6",
     "react-native": ">=0.40"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "react-native",
     "snackbar",
