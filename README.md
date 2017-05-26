@@ -1,4 +1,6 @@
 # React Native Snackbar Avoiding View
+[![npm version](https://badge.fury.io/js/react-native-snackbar-avoiding-view.svg)](https://badge.fury.io/js/react-native-snackbar-avoiding-view)
+
 ##### The Problem
 Snackbar's appear at the bottom edge of the screen and overlay the content which sometimes is a Floating Action Button. However, the snackbar should not overlay the FAB according to the Material Design spec.
 
