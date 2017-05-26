@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "main": "index.js",
   "types": "index.d.ts",
+  "scripts": {
+    "commit": "git-cz"
+  },
   "author": "Kyle Roach",
   "license": "MIT",
   "description": "AvoidingView that adjusts when a snackbar is present",
@@ -23,5 +26,14 @@
     "snackbar",
     "view",
     "component"
-  ]
+  ],
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
