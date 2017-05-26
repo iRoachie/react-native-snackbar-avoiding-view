@@ -1,6 +1,8 @@
 # React Native Snackbar Avoiding View
 AvoidingView that adjusts when a snackbar is present
 
+![img](http://i.imgur.com/UvcnTLI.gif)
+
 ## Getting Started
 #### Step 1
 
