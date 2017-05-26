@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "Kyle Roach",
   "license": "MIT",
-  "description": "CoordinatorLayout View which adjusts content when a snackbar is present",
+  "description": "AvoidingView that adjusts when a snackbar is present",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iRoachie/react-native-snackbar-avoiding-view.git"
