@@ -1,12 +1,13 @@
 // @flow
-import React from "react";
-import { Animated, StyleSheet } from "react-native";
+import React from 'react'
+import { Animated, StyleSheet } from 'react-native'
 
 type AnimationProps = {
   /**
    * Time it takes for the show/hide action
    */
   spring: number,
+
   /**
    * Time to pause between the snackbar showing, then hiding
    */
@@ -16,12 +17,12 @@ type AnimationProps = {
    * Height of the snackbar
    */
   height: number
-};
+}
 
 export default class SnackBarAvoidingView extends React.Component {
   state = {
     snackbarOffset: new Animated.Value(0)
-  };
+  }
 
   avoidSnackbar({ spring, delay, height }: AnimationProps) {
     Animated.sequence([
@@ -34,7 +35,7 @@ export default class SnackBarAvoidingView extends React.Component {
         toValue: 0,
         duration: spring
       })
-    ]).start();
+    ]).start()
   }
 
   render() {
@@ -45,15 +46,15 @@ export default class SnackBarAvoidingView extends React.Component {
       >
         {this.props.children}
       </Animated.View>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    position: "absolute",
+    position: 'absolute',
     right: 0,
-    width: "100%",
-    height: "100%"
+    width: '100%',
+    height: '100%'
   }
-});
+})
