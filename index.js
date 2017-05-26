@@ -27,13 +27,15 @@ export default class SnackBarAvoidingView extends React.Component {
   avoidSnackbar({ spring, delay, height }: AnimationProps) {
     Animated.sequence([
       Animated.timing(this.state.snackbarOffset, {
-        toValue: height,
-        duration: spring
+        toValue: -height,
+        duration: spring,
+        useNativeDriver: true
       }),
       Animated.delay(delay),
       Animated.timing(this.state.snackbarOffset, {
         toValue: 0,
-        duration: spring
+        duration: spring,
+        useNativeDriver: true
       })
     ]).start()
   }
@@ -41,7 +43,7 @@ export default class SnackBarAvoidingView extends React.Component {
   render() {
     return (
       <Animated.View
-        style={[styles.container, { bottom: this.state.snackbarOffset }]}
+        style={[styles.container, { transform: [{ translateY: this.state.snackbarOffset }]}]}
         pointerEvents="box-none"
       >
         {this.props.children}
