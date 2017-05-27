@@ -19,7 +19,7 @@ type AnimationProps = {
   height: number
 }
 
-export default class SnackBarAvoidingView extends React.Component {
+export default class SnackbarAvoidingView extends React.Component {
   state = {
     snackbarOffset: new Animated.Value(0)
   }

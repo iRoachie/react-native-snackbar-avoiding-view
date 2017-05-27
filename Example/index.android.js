@@ -11,7 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
-import SnackBarAvoidingView from 'react-native-snackbar-avoiding-view'
+import SnackbarAvoidingView from 'react-native-snackbar-avoiding-view'
 import { ActionButton, Button, ThemeProvider } from 'react-native-material-ui'
 import Snackbar from 'react-native-snackbar'
 
@@ -35,9 +35,9 @@ export default class Test extends Component {
         <View style={styles.container}>
           <Button text="Open Snackbar" onPress={this.showSnackbar.bind(this)}/>
 
-          <SnackBarAvoidingView ref="avoidingView">
+          <SnackbarAvoidingView ref="avoidingView">
             <ActionButton onPress={() => alert('a')}/>
-          </SnackBarAvoidingView>
+          </SnackbarAvoidingView>
         </View>
       </ThemeProvider>
     );
