@@ -27,12 +27,12 @@ yarn add react-native-snackbar-avoiding-view
 ##### Step 2
 Use the component
 ```jsx
-import SnackBarAvoidingView from 'react-native-snackbar-avoiding-view'
+import SnackbarAvoidingView from 'react-native-snackbar-avoiding-view'
 
 // Make a ref to the component
-<SnackBarAvoidingView ref="avoidingView">
+<SnackbarAvoidingView ref="avoidingView">
   <ActionButton />
-</SnackBarAvoidingView>
+</SnackbarAvoidingView>
 
 // Show Snackbar and let the view avoid it
 Snackbar.show({
